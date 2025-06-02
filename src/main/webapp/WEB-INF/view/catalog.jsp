@@ -48,7 +48,7 @@
                 <div class="card-body">
                     <div class="row">
                         <div class="col-md-4">
-                            <img src="static/images/<c:out value="${product.photo}"/>" class="img-fluid" width="150"
+                            <img src="<c:out value="${product.photo}"/>" class="img-fluid" width="150"
                                  height="150">
                         </div>
                         <div class="col-md-8">

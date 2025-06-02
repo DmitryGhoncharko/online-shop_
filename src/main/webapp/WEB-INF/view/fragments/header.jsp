@@ -44,12 +44,6 @@
                             </c:forEach>
                         </div>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link"
-                           href="${pageContext.request.contextPath}/online-shop?command=promotions">
-                            <fmt:message bundle="${loc}" key="language.promotions"/>
-                        </a>
-                    </li>
                     <c:if test="${role.name == 'admin'}">
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#"
@@ -60,9 +54,6 @@
                             <div class="dropdown-menu" aria-labelledby="userDropdown">
                                 <a class="dropdown-item"
                                    href="${pageContext.request.contextPath}/online-shop?command=addProduct"><fmt:message bundle="${loc}" key="language.addProduct"/></a>
-                                <a class="dropdown-item"
-                                   href="${pageContext.request.contextPath}/online-shop?command=addPromotion"><fmt:message bundle="${loc}" key="language.addPromotion"/></a>
-                                <div class="dropdown-divider"></div>
                                 <a class="dropdown-item"
                                    href="${pageContext.request.contextPath}/online-shop?command=viewOrders"><fmt:message bundle="${loc}" key="language.viewOrders"/></a>
                             </div>

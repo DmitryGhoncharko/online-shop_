@@ -49,7 +49,7 @@
                                 <td>
                                     <c:forEach var="product" items="${products}">
                                         <c:if test="${product.id == order.productId}">
-                                            <img src="static/images/${product.photo}" class="img-thumbnail" width="80"
+                                            <img src="${product.photo}" class="img-thumbnail" width="80"
                                                  height="80">
                                         </c:if>
                                     </c:forEach>
